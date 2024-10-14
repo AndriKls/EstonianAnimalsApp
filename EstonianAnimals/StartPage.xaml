@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.StartPage"
+             Title="Eesti Loomad">
+
+    <Grid>
+        <!-- Sinimustvalge taust -->
+        <Grid RowDefinitions="*,*,*">
+            <BoxView Grid.Row="0" Color="Blue" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" />
+            <BoxView Grid.Row="1" Color="Black" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" />
+            <BoxView Grid.Row="2" Color="White" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" />
+        </Grid>
+
+        <!-- Tervitustekst ja nupp -->
+        <VerticalStackLayout
+            Spacing="24"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+            <Label 
+                Text="Tere tulemast Eesti Loomade rakendusse! Tutvu loomadega kes elavad meie kaunil Maarjamaal!"
+                HorizontalTextAlignment="Center"
+                FontSize="20"
+                TextColor="White"
+                Padding="16" />
+
+            <Button 
+                Text="Tutvu loomadega"
+                HorizontalOptions="Center"
+                Clicked="ExploreNow_Clicked"
+                BackgroundColor="Black"
+                TextColor="White"
+                Padding="12, 8"
+                CornerRadius="20"
+                FontSize="18"
+                FontAttributes="Bold"
+                BorderWidth="2"
+                BorderColor="White" />
+
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
