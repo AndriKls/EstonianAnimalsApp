@@ -39,9 +39,6 @@ namespace EstonianAnimals
             
         }
 
-        private async void OnInvertebratesButtonClicked(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

@@ -1,12 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EstonianAnimals.Views.MammalDetailsPage"
-             Title="{Binding Name}">
+             BackgroundColor="#2C2C2C"
+    Title="{Binding Name}">
 
-    <VerticalStackLayout Padding="10" Spacing="20">
-        <Image Source="{Binding Image}" Aspect="AspectFit" HeightRequest="300"/>
-        <Label Text="{Binding Description}" FontSize="Medium" TextColor="Black"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            
+            <Image Source="{Binding Image}" HeightRequest="300" WidthRequest="300" Aspect="AspectFill"/>
 
+            
+            <Label Text="{Binding Name}" 
+                   FontSize="Large" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   Padding="10"/>
+
+            
+            <Label Text="{Binding Description}" 
+                   FontSize="Medium" 
+                   TextColor="LightGray" 
+                   HorizontalOptions="Center" 
+                   Padding="10"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

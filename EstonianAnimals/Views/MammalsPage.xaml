@@ -20,10 +20,10 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Animal">
                     <Grid Padding="10">
-                        <Frame HasShadow="True" CornerRadius="10">
+                        <Frame HasShadow="True" CornerRadius="20" BackgroundColor="#4CAF50" Padding="15" WidthRequest="200" HeightRequest="300">
                             <VerticalStackLayout>
                                 <Image Source="{Binding Image}" HeightRequest="150" WidthRequest="150" Aspect="AspectFill"/>
-                                <Label Text="{Binding Name}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Name}" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="White"/>
                             </VerticalStackLayout>
                         </Frame>
                     </Grid>

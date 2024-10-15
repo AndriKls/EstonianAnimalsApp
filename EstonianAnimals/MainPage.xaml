@@ -89,17 +89,7 @@
                 BorderWidth="2"
                 BorderColor="White" />
 
-            <Button 
-                Text="Teised Selgrootud"
-                HorizontalOptions="Center"
-                BackgroundColor="Black"
-                TextColor="White"
-                Padding="12, 8"
-                CornerRadius="20"
-                FontSize="18"
-                FontAttributes="Bold"
-                BorderWidth="2"
-                BorderColor="White" />
+            
 
         </VerticalStackLayout>
     </Grid>
