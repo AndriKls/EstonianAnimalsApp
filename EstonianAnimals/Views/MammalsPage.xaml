@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EstonianAnimals.Views.MammalsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentView>
+             xmlns:models="clr-namespace:EstonianAnimals.Models"
+             x:Class="EstonianAnimals.Views.MammalsPage"
+             Title="Imetajad">
+
+    <Grid>
+        <CollectionView
+            x:Name="MammalsList"
+            ItemsSource="{Binding Mammals}"
+            SelectionMode="Single"
+            SelectionChanged="OnMammalSelected"
+            HorizontalScrollBarVisibility="Always">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Animal">
+                    <Grid Padding="10">
+                        <Frame HasShadow="True" CornerRadius="10">
+                            <VerticalStackLayout>
+                                <Image Source="{Binding Image}" HeightRequest="150" WidthRequest="150" Aspect="AspectFill"/>
+                                <Label Text="{Binding Name}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>

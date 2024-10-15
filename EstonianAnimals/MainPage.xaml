@@ -5,14 +5,12 @@
              Title="Loomade Kategooriad">
 
     <Grid>
-        <!-- Sinimustvalge taust -->
         <Grid RowDefinitions="*,*,*">
             <BoxView Grid.Row="0" Color="Blue" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" />
             <BoxView Grid.Row="1" Color="Black" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" />
             <BoxView Grid.Row="2" Color="White" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" />
         </Grid>
 
-        <!-- Nupud loomagruppide jaoks -->
         <VerticalStackLayout
             Spacing="24"
             HorizontalOptions="Center"
@@ -21,6 +19,7 @@
             <Button 
                 Text="Imetajad"
                 HorizontalOptions="Center"
+                Clicked="OnMammalsButtonClicked"
                 BackgroundColor="Black"
                 TextColor="White"
                 Padding="12, 8"
