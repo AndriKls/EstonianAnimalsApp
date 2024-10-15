@@ -1,3 +1,5 @@
+using EstonianAnimals;
+
 namespace MauiApp1.Views
 {
     public partial class StartPage : ContentPage
@@ -9,8 +11,8 @@ namespace MauiApp1.Views
 
         async void ExploreNow_Clicked(object sender, EventArgs e)
         {
-            // Navigate to the main application page (e.g., PlanetsPage or AnimalsPage)
-            
+
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }

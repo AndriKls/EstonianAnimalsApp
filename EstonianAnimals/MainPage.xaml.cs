@@ -2,24 +2,44 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnMammalsButtonClicked(object sender, EventArgs e)
         {
-            count++;
+            await DisplayAlert("Imetajad", "Sa valisid imetajad.", "OK");
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        private async void OnBirdsButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Linnud", "Sa valisid linnud.", "OK");
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void OnFishButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Kalad", "Sa valisid kalad.", "OK");
+        }
+
+        private async void OnReptilesButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Roomajad", "Sa valisid roomajad.", "OK");
+        }
+
+        private async void OnAmphibiansButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Kahepaiksed", "Sa valisid kahepaiksed.", "OK");
+        }
+
+        private async void OnInsectsButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Putukad", "Sa valisid putukad.", "OK");
+        }
+
+        private async void OnInvertebratesButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Selgrootud", "Sa valisid selgrootud.", "OK");
         }
     }
-
 }
