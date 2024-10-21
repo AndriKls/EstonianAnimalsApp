@@ -57,6 +57,7 @@
             <Button 
                 Text="Roomajad"
                 HorizontalOptions="Center"
+                Clicked="OnReptilesButtonClicked"
                 BackgroundColor="Black"
                 TextColor="White"
                 Padding="12, 8"

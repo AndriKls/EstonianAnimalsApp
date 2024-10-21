@@ -79,6 +79,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\ReptilesPage.xaml.cs">
+	    <DependentUpon>ReptilesPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ReptilesDetailsPage.xaml.cs">
+	    <DependentUpon>ReptilesDetailsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\FishPage.xaml.cs">
 	    <DependentUpon>FishPage.xaml</DependentUpon>
 	  </Compile>
@@ -89,6 +95,12 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="StartPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ReptilesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ReptilesDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FishDetailsPage.xaml">

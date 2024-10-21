@@ -26,7 +26,7 @@ namespace EstonianAnimals
 
         private async void OnReptilesButtonClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushAsync(new ReptilesPage());
         }
 
         private async void OnAmphibiansButtonClicked(object sender, EventArgs e)
