@@ -32,6 +32,7 @@
             <Button 
                 Text="Linnud"
                 HorizontalOptions="Center"
+                Clicked="OnBirdsButtonClicked"
                 BackgroundColor="Black"
                 TextColor="White"
                 Padding="12, 8"
