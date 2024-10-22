@@ -71,6 +71,7 @@
             <Button 
                 Text="Kahepaiksed"
                 HorizontalOptions="Center"
+                Clicked="OnAmphibiansButtonClicked"
                 BackgroundColor="Black"
                 TextColor="White"
                 Padding="12, 8"
