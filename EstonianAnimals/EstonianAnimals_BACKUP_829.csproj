@@ -59,6 +59,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+<<<<<<< Updated upstream
 	  <None Remove="Resources\Images\ahven.png" />
 	  <None Remove="Resources\Images\angerjas.png" />
 	  <None Remove="Resources\Images\haug.png" />
@@ -69,6 +70,7 @@
 	  <None Remove="Resources\Images\sarg.png" />
 	  <None Remove="Resources\Images\tursk.png" />
 	  <None Remove="Resources\Images\vikerforell.png" />
+=======
 	  <None Remove="Resources\Images\aphid.png" />
 	  <None Remove="Resources\Images\buff_tailed_bumblebee.png" />
 	  <None Remove="Resources\Images\common_quaker_moth.png" />
@@ -79,6 +81,7 @@
 	  <None Remove="Resources\Images\rose_chafe.png" />
 	  <None Remove="Resources\Images\vagrant_darter.png" />
 	  <None Remove="Resources\Images\wasp.png" />
+>>>>>>> Stashed changes
 	</ItemGroup>
 
 	<ItemGroup>
@@ -107,6 +110,7 @@
 	  <MauiXaml Update="StartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+<<<<<<< Updated upstream
 	  <MauiXaml Update="Views\AmphibiansDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -126,10 +130,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FishDetailsPage.xaml">
+=======
 	  <MauiXaml Update="Views\InsectsDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\InsectsPage.xaml">
+>>>>>>> Stashed changes
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MammalsDetailsPage.xaml">

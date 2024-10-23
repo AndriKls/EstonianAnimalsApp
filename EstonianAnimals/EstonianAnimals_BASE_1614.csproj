@@ -30,8 +30,6 @@
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
-		<WindowsPackageType Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">None</WindowsPackageType>
-
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
@@ -59,83 +57,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\ahven.png" />
-	  <None Remove="Resources\Images\angerjas.png" />
-	  <None Remove="Resources\Images\haug.png" />
-	  <None Remove="Resources\Images\kammeljas.png" />
-	  <None Remove="Resources\Images\koha.png" />
-	  <None Remove="Resources\Images\latikas.png" />
-	  <None Remove="Resources\Images\lohe.png" />
-	  <None Remove="Resources\Images\sarg.png" />
-	  <None Remove="Resources\Images\tursk.png" />
-	  <None Remove="Resources\Images\vikerforell.png" />
-	  <None Remove="Resources\Images\aphid.png" />
-	  <None Remove="Resources\Images\buff_tailed_bumblebee.png" />
-	  <None Remove="Resources\Images\common_quaker_moth.png" />
-	  <None Remove="Resources\Images\european_hornet.png" />
-	  <None Remove="Resources\Images\grasshopper.png" />
-	  <None Remove="Resources\Images\Hummingbird_hawk_moth.png" />
-	  <None Remove="Resources\Images\mosquito.png" />
-	  <None Remove="Resources\Images\rose_chafe.png" />
-	  <None Remove="Resources\Images\vagrant_darter.png" />
-	  <None Remove="Resources\Images\wasp.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="Microsoft.UI.Xaml" Version="2.8.2" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Compile Update="Views\ReptilesPage.xaml.cs">
-	    <DependentUpon>ReptilesPage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\ReptilesDetailsPage.xaml.cs">
-	    <DependentUpon>ReptilesDetailsPage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\FishPage.xaml.cs">
-	    <DependentUpon>FishPage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\FishDetailsPage.xaml.cs">
-	    <DependentUpon>FishDetailsPage.xaml</DependentUpon>
-	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="StartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\AmphibiansDetailsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\AmphibiansPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\BirdsDetailsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\BirdsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\ReptilesPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\ReptilesDetailsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\FishDetailsPage.xaml">
-	  <MauiXaml Update="Views\InsectsDetailsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\InsectsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\MammalsDetailsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\FishPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MammalsPage.xaml">

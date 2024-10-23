@@ -69,16 +69,6 @@
 	  <None Remove="Resources\Images\sarg.png" />
 	  <None Remove="Resources\Images\tursk.png" />
 	  <None Remove="Resources\Images\vikerforell.png" />
-	  <None Remove="Resources\Images\aphid.png" />
-	  <None Remove="Resources\Images\buff_tailed_bumblebee.png" />
-	  <None Remove="Resources\Images\common_quaker_moth.png" />
-	  <None Remove="Resources\Images\european_hornet.png" />
-	  <None Remove="Resources\Images\grasshopper.png" />
-	  <None Remove="Resources\Images\Hummingbird_hawk_moth.png" />
-	  <None Remove="Resources\Images\mosquito.png" />
-	  <None Remove="Resources\Images\rose_chafe.png" />
-	  <None Remove="Resources\Images\vagrant_darter.png" />
-	  <None Remove="Resources\Images\wasp.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -126,10 +116,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FishDetailsPage.xaml">
-	  <MauiXaml Update="Views\InsectsDetailsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\InsectsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MammalsDetailsPage.xaml">

@@ -84,6 +84,7 @@
             <Button 
                 Text="Putukad"
                 HorizontalOptions="Center"
+                Clicked="OnInsectsButtonClicked"
                 BackgroundColor="Black"
                 TextColor="White"
                 Padding="12, 8"
